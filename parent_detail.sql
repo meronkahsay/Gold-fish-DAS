@@ -1,3 +1,4 @@
+CREATE SCHEMA malnutrition;
 CREATE Table malnutrition.parent_detail(
     parent_id VARCHAR(6) PRIMARY KEY,
    parent_name VARCHAR(100)NOT NULL,
@@ -21,5 +22,7 @@ INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_informatio
 	 ('p13','Eric','0745676758'),
 	 ('p14','Brian','0745676758'),
 	 ('p15','Judy','0745666758');
+
+
 
 
