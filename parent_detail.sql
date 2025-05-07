@@ -1,3 +1,9 @@
+CREATE Table malnutrition.parent_detail(
+    parent_id VARCHAR(6) PRIMARY KEY,
+   parent_name VARCHAR(100)NOT NULL,
+   contact_information VARCHAR(10) NOT NULL,
+);
+
 gitINSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
 	 ('p01','Kamau','0734261890'),
 	 ('p02','Mukami','0715948030'),
@@ -16,6 +22,3 @@ INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_informatio
 	 ('p14','Brian','0745676758'),
 	 ('p15','Judy','0745666758');
 
-SELECT COUNT (*)'parent_name'
-FROM parent_detail
-WHERE 'parent_name' LIKE 'k%' OR 'K%'
