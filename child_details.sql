@@ -27,3 +27,10 @@ INSERT INTO malnutrition.child_detail (child_id,date_of_birth,gender,child_name)
 SELECT COUNT (*)'parent_name'
 FROM parent_detail
 WHERE 'parent_name' LIKE 'k%' OR 'K%'
+
+
+SELECT COUNT (*) AS
+children_below_1_year_10_months
+from
+malnutrition.child_detail
+where age (current_date,dob) < interval'1 year 10 months';

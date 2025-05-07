@@ -4,7 +4,7 @@ CREATE Table malnutrition.parent_detail(
    contact_information VARCHAR(10) NOT NULL,
 );
 
-gitINSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
+INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
 	 ('p01','Kamau','0734261890'),
 	 ('p02','Mukami','0715948030'),
 	 ('P03','Jane','0782836452'),
@@ -21,4 +21,5 @@ INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_informatio
 	 ('p13','Eric','0745676758'),
 	 ('p14','Brian','0745676758'),
 	 ('p15','Judy','0745666758');
+
 
