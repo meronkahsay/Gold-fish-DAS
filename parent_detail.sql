@@ -1,4 +1,4 @@
-gitINSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
+INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
 	 ('p01','Kamau','0734261890'),
 	 ('p02','Mukami','0715948030'),
 	 ('P03','Jane','0782836452'),
