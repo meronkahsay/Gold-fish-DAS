@@ -1,3 +1,11 @@
+
+CREATE Table malnutrition.progress_detail(
+	progress_id VARCHAR(5) PRIMARY KEY,
+	child_id DATE NOT REFERENCES malnutrition.child_detail(child_id),
+	height DECIMAL(5,2) NOT NULL,
+	weight DECIMAL(5,2) NOT NULL,
+	tracking_date DATE NOT NULL
+);
 INSERT INTO malnutrition.progress_detail (progress_id,child_id,height,weight,tracking_date) VALUES
 	 ('PP05','C05',43.00,19.00,'2026-01-01'),
 	 ('PP06','C06',40.00,20.00,'2024-10-23'),
