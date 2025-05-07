@@ -1,3 +1,11 @@
+CREATE SCHEMA malnutrition;
+CREATE Table malnutrition.child_detail(
+	child_id VARCHAR(5) PRIMARY KEY,
+	date_of_birth DATE NOT NULL,
+	gender VARCHAR(10) NOT NULL,
+	child_name VARCHAR(100) NOT NULL
+);
+
 INSERT INTO malnutrition.child_detail (child_id,date_of_birth,gender,child_name) VALUES
 	 ('C01','2020-05-12','female','Mary'),
 	 ('C02','2021-10-12','male','Gabriel'),
@@ -15,3 +23,7 @@ INSERT INTO malnutrition.child_detail (child_id,date_of_birth,gender,child_name)
 	 ('C06','2024-10-21','female','Brenda'),
 	 ('C08','2024-06-11','male','Joel'),
 	 ('C12','2023-08-20','male','James');
+
+SELECT COUNT (*)'parent_name'
+FROM parent_detail
+WHERE 'parent_name' LIKE 'k%' OR 'K%'
