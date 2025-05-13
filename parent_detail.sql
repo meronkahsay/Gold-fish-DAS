@@ -23,9 +23,9 @@ INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_informatio
 	 ('p15','Judy','0745634345');
 
 
-SELECT COUNT (*) AS
-children_below_1_year_10_months
-from
-malnutrition.child_detail
-where age (current_date,dob) < interval'1 year 10 months';
+SELECT COUNT(*) AS parent_name_count
+FROM malnutrition.parent_detail
+WHERE parent_name LIKE 'k%' OR parent_name LIKE 'K%';
+
+
 
