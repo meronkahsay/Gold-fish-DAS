@@ -1,11 +1,12 @@
 CREATE SCHEMA malnutrition;
 CREATE Table malnutrition.parent_detail(
     parent_id VARCHAR(6) PRIMARY KEY,
-   parent_name VARCHAR(100)NOT NULL,
+    parent_name VARCHAR(100)NOT NULL,
    contact_information VARCHAR(10) NOT NULL,
 );
 
-INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
+INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) 
+VALUES
 	 ('p01','Kamau','0734261890'),
 	 ('p02','Mukami','0715948030'),
 	 ('P03','Jane','0782836452'),
@@ -16,13 +17,14 @@ INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_informatio
 	 ('p08','Karen','0734212890'),
 	 ('p09','Lynn','0734621890'),
 	 ('p10','Bosibori','0734123890');
-INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
+INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) 
+VALUES
 	 ('p11','Matt','0734261890'),
 	 ('p12','Apondi','0753426758'),
-	 ('p13','Eric','0745676758'),
+	 ('p13','Eric','0745677758'),
 	 ('p14','Brian','0745676758'),
 	 ('p15','Judy','0745666758');
 
-
-
-
+SELECT COUNT (*)'parent_name'
+FROM parent_detail
+WHERE 'parent_name' LIKE 'k%' OR 'K%'
