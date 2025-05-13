@@ -6,6 +6,7 @@ CREATE Table malnutrition.parent_detail(
 );
 
 
+
 INSERT INTO malnutrition.parent_detail (parent_id,parent_name,contact_information) VALUES
 
 	 ('p01','Kamau','0734261890'),
@@ -24,7 +25,6 @@ VALUES
 	 ('p12','Apondi','0753426758'),
 	 ('p13','Eric','0745677658'),
 	 ('p15','Judy','0745634345');
-
 
 
 SELECT COUNT(*) AS parent_name_count
