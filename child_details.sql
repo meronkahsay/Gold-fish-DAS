@@ -24,11 +24,9 @@ INSERT INTO malnutrition.child_detail (child_id,date_of_birth,gender,child_name)
 	 ('C08','2024-06-11','male','Joel'),
 	 ('C12','2023-08-20','male','James');
 
-
-
-
 SELECT COUNT (*) AS
 children_below_1_year_10_months
 from
 malnutrition.child_detail
 where age (current_date, date_of_birth ) < interval'1 year 10 months';
+
