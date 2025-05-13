@@ -1,7 +1,7 @@
 
 CREATE Table malnutrition.progress_detail(
 	progress_id VARCHAR(5) PRIMARY KEY,
-	child_id DATE NOT REFERENCES malnutrition.child_detail(child_id),
+	child_id VARCHAR(5) REFERENCES malnutrition.child_detail(child_id),
 	height DECIMAL(5,2) NOT NULL,
 	weight DECIMAL(5,2) NOT NULL,
 	tracking_date DATE NOT NULL

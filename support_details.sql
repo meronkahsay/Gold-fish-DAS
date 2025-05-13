@@ -23,5 +23,6 @@ INSERT INTO malnutrition.support_detail (support_id,progress_id,type_of_support,
 	 ('s13','pp12','medical','checkup costs'),
 	 ('s14','pp13','feeding','4meals/day'),
 	 ('s15','pp14','medical','3 meals/day');
+	 
 select count(*) as childres_with_multiple_meals
 from malnutrition.support_detail where notes like '%3meals/day%' or notes like  '%4meals/day%';
